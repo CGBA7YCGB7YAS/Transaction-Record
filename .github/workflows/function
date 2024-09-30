@@ -1,0 +1,8 @@
+function doPost(e) {
+    if (!e || !e.parameter) {
+        return ContentService.createTextOutput(JSON.stringify({ result: "error", message: "Invalid request" }))
+            .setMimeType(ContentService.MimeType.JSON);
+    }
+
+    // Your existing code here...
+}
